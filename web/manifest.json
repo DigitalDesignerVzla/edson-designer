@@ -1,0 +1,56 @@
+{
+  // Nombre corto para cuando no hay espacio suficiente (ej: debajo del icono)
+  "short_name": "EDSON",
+
+  // Nombre completo de la aplicación (ej: en el diálogo de instalación)
+  "name": "EDSON DESIGNER01",
+
+  // Descripción de la aplicación (útil para motores de búsqueda y stores)
+  "description": "Una descripción breve de lo que hace mi app",
+
+  // La URL que se cargará cuando el usuario inicie la app instalada
+  "start_url": "https://digitaldesignervzla.github.io/edson-designer/web/index.html=pwa",
+
+  // Cómo se debe mostrar la aplicación al abrirla
+  // "standalone": Oculta toda la UI del navegador (como una app nativa).
+  // "minimal-ui": Similar a standalone pero con controles mínimos de navegación (solo Safari iOS).
+  // "browser": Se abre en una pestaña normal del navegador (por defecto).
+  // "fullscreen": Se abre a pantalla completa, ideal para juegos.
+  "display": "standalone",
+
+  // Color de fondo de la ventana de la app antes de que cargue el estilo de la página.
+  // También define el color de la barra de estado en algunos dispositivos.
+  "background_color": "#ffffff",
+
+  // Color del tema de la aplicación. Afecta a la barra de estado en Android.
+  "theme_color": "#000000",
+
+  // Conjunto de iconos que el sistema usará en diferentes lugares:
+  // Pantalla de inicio, menú de apps, pantalla de carga, etc.
+  // Debes proveer iconos en múltiples resoluciones.
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable" // 'maskable' significa que el icono puede ser recortado de forma adaptativa por el OS
+    },
+    {
+      "src": "favicon.png", // Tamaño mínimo recomendado
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.png", // Tamaño para splash screens y stores
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+
+  // (Opcional) La URL de origen de tu aplicación. Por seguridad, debe estar en el mismo dominio.
+  "scope": "https://digitaldesignervzla.github.io/edson-designer/web/index.html",
+
+  // (Opcional) La orientación preferida de la pantalla.
+  // Ej: "portrait", "landscape", "natural" (la predeterminada del dispositivo)
+  "orientation": "portrait"
+}
